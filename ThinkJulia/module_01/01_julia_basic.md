@@ -20,15 +20,15 @@ Hello World
 Bahasa pemrograman `Julia` menyediakan berbagai macam operator aritmatika untuk melakukan komputasi. Sebagai contoh, operator `+` digunakan untuk penjumlahan, `-` untuk pengurangan, `*` untuk perkalian, `/` untuk pembagian, dan `^` untuk operasi pangkat.
 
 ```console
-julia>1 + 2
+julia> 1 + 2
 3
-julia>4 - 3
+julia> 4 - 3
 1
-julia>2 * 4
+julia> 2 * 4
 8
-julia>8 / 4
+julia> 8 / 4
 2.0
-julia>2^3 - 5
+julia> 2^3 - 5
 3
 ```
 
@@ -37,20 +37,20 @@ julia>2^3 - 5
 Jika diperhatikan pada beberapa contoh sebelumnya, kita dapat melihat beberapa bentuk nilai dalam bahasa pemrograman julia: `3` merupakan tipe bilangan bulat (*integer*), `2.0` merupakan tipe bilangan *floating-point*, dan `"Hello World"` merupakan tipe *string*. `Julia` menyediakan perintah untuk mengetahui tipe data dari sebuah nilai.
 
 ```console
-julia>typeof(3)
+julia> typeof(3)
 Int64
-julia>typeof(2.0)
+julia> typeof(2.0)
 Float64
-julia>typeof("Hello World")
+julia> typeof("Hello World")
 String
 ```
 
 Tipe data `Int64` termasuk dalam tipe bilangan *integer*, `Float64` termasuk dalam tipe bilangan *floating point*, sedangkan `String` sesuai namanya merepresentasikan tipe bilangan *string*. Tipe data `String` selalu diapit oleh tanda petik dua.
 
 ```console
-julia>typeof("290")
+julia> typeof("290")
 String
-julia>typeof("12.789")
+julia> typeof("12.789")
 String
 ```
 

@@ -26,7 +26,7 @@ Perlu dicatat bahwa, dalam mode eksekusi skrip program (bukan menggunakan REPL),
 
 Sebuah ekspresi dapat mengandung satu atau lebih operator. Urutan evaluasi operator dalam `Julia` mengikuti kaidah evaluasi operator matematika pada umumnya. Aturan ini sering disebut sebagai aturan **PEMDAS**:
 
-- **P**arenthesis (dalam kurung) memiliki prioritas tertinggi dalam evaluasi ekspresi. 
+- **P**arenthesis (dalam kurung) memiliki prioritas tertinggi dalam evaluasi ekspresi.
 - Selanjutnya adalah **E**xponentiation (pangkat).
 - Diikuti dengan **M**ultiplication dan **D**ivison.
 - Lalu yang terakhir adalah operator **A**ddition `+` dan **S**ubstraction `-`.
