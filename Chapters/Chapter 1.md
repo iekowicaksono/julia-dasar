@@ -16,3 +16,4 @@ JULIA merupakan bahasa pemrograman yang dapat mendukung lebih dari satu paradigm
 ## Sejarah JULIA 
 JULIA merupakan bahasa pemrograman yang relatif baru. Pada tahun 2009, Jeff Bezanson, Stefan Karpinski, Viral B. Shah dan Alan Edelman memulai proyek untuk merancang JULIA. Tiga tahun setelah itu, tepatnya pada tanggal 14 Februari 2012, JULIA [pertama kali](https://julialang.org/blog/2012/02/why-we-created-julia/) dirilis ke publik.
 
+Pada blog "Why we create JULIA", mengapa kami membuat JULIA disebutkan bahwa alasan sederhananya adalah karena keempat pembuat JULIA tamak akan sebuah bahasa pemrograman yang wonderfull dan powerfull. 
