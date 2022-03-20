@@ -1,4 +1,9 @@
-# JULIA
+<a name="logo"/>
+<div align="center">
+<a href="https://julialang.org/" target="_blank">
+<img src="C:\Users\Dell\Documents\Works\Writing\Julia Basic\julia-dasar\resources\logo.svg" alt="Julia Logo" width="210" height="142"></img>
+</a>
+</div>
 
 # Tentang Julia
 JULIA adalah salah satu bahasa pemrograman tingkat tinggi dan memiliki kinerja yang tinggi. JULIA juga merupakan bahasa pemrograman yang dapat digunakan untuk berbagai tujuan (general-purpose). JULIA memiliki banyak sekali fitur yang dapat dipergunakan untuk membuat aplikasi, menganalisis secara numerik dan komputasional.
