@@ -34,7 +34,7 @@ Dalam bahasa pemrograman `Julia`, kita dapat memanfaatkan secara langsung fungsi
 ```bash
 julia> log10(100)
 2.0
-julia> sin(0.5*&#960;)
+julia> sin(0.5*π)
 1.0
 julia> sqrt(100)
 10.0
@@ -44,4 +44,4 @@ julia> exp(log10(1))
 
 Berdasarkan potongan skrip diatas, fungsi `log10` mengembalian hasil dari logaritma basis 10 dari `100`. Kemudian, fungsi `sin` mengembalikan nilai `f(x) = sin(x)` dengan `x` dalam satuan radian. Untuk mendapatkan nilai akar dua dari sebuah bilangan, kita dapat menggunakan fungsi `sqrt` (square-root).
 
-Pemanggilan fungsi juga dapat dilakukan secara komposisi, yaitu memanggil fungsi lainnya sebagai argumen sebuah fungsi, sama seperti dalam istilah matematika mengenai komposisi fungsi `f(x) &#8728; g(x)`. Perhatikan pada ekspresi terakhir, kita dapat melakukan komposisi terhadap fungsi.
+Pemanggilan fungsi juga dapat dilakukan secara komposisi, yaitu memanggil fungsi lainnya sebagai argumen sebuah fungsi, sama seperti dalam istilah matematika mengenai komposisi fungsi `f(x) ∘ g(x)`. Perhatikan pada ekspresi terakhir, kita dapat melakukan komposisi terhadap fungsi.

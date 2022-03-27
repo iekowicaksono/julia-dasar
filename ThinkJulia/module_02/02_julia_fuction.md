@@ -14,12 +14,11 @@ Contoh diatas merupakan fungsi sederhana bernama `hello` (dan fungsi tidak mener
 
 Untuk mendefinisikan fungsi melalui REPL, kita menyatakannya menggunakan kata kunci `function` diikuti dengan nama fungsi dan definisi variabel argumen (jika ada). Jika kita mengetikkan kata kunci `function` pada REPL, secara otomatis kata kunci `end` akan mengakhiri definisi fungsi.
 
-```console
+```bash
 julia> function hello()
        println("Halo!")
        end
 hello (generic function with 1 method)
-
 julia> hello()
 Halo!
 ```
@@ -28,14 +27,13 @@ Definisi fungsi yang dilakukan pada REPL (atau konsol interaktif) berlaku dalam 
 
 Dalam definisi sebuah fungsi, kita juga dapat melakukan pemanggilan fungsi lainnya yang didefinisikan sebelumnya (pada sesi yang sama), ataupun fungsi itu sendiri (rekursif&mdash;akan dibahas pada materi tersendiri).
 
-```console
+```bash
 julia> function greetings(name)
        hello()
        hello()
        println("Apa kabar ", name)
        end
 greetings (generic function with 2 methods)
-
 julia> greetings("Andi")
 Halo!
 Halo!
