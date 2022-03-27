@@ -40,4 +40,17 @@ Halo!
 Apa kabar Andi
 ```
 
-Pada kode diatas, kita membuat fungsi `greetings` yang menerima sebuah parameter yang disimpan dalam variabel `name`. Dalam fungsi, kita memanggil fungsi Pemanggilan fungsi `halo()` sebanyak dua kali, lalu mencetak `Apa kabar` dan dilanjutkan dengan isi variabel `nama` yang nantinya akan diisi dengan nilai yang diberikan saat fungsi `greetings` dipanggil.
+Pada kode diatas, kita membuat fungsi `greetings` yang menerima sebuah parameter yang disimpan dalam variabel `name`. Dalam fungsi, kita memanggil fungsi Pemanggilan fungsi `halo()` sebanyak dua kali, lalu mencetak `Apa kabar` dan dilanjutkan dengan isi variabel `nama` yang nantinya akan diisi dengan nilai yang diberikan saat fungsi `greetings` dipanggil. Perlu dicatat juga, bahwa argumen/variabel `nama` merupakan variabel lokal, yang hanya dapat diakses dalam blok fungsi tersebut.
+
+Dalam konsep matematika, fungsi bertujuan untuk memetakan sebuah nilai ke nilai lainnya. Sama halnya dalam pemrograman, fungsi pada umumnya mengembalikan sebuah nilai jika dipanggil. Namun, coba perhatikan dengan baik fungsi `hello` dan `greetings` yang telah kita definsikan sebelumnya. Kedua fungsi ini tidak menghasilkan sebuah nilai. Kedua fungsi ini hanya mencetak ke layar tanpa menghasilkan sebuah nilai. Tidak seperti fungsi bawaan `Julia` yang telah kita gunakan pada pembahasan sebelmumnya seperti fungsi `log`, `sin`, `sqrt`, dan lain sebagainya. Fungsi yang tidak mengembalikan sebuah nilai sering disebut sebagai fungsi `void`. Fungsi yang bersifat `void` tidak mengembalikan nilai (`nothing`).
+
+```bash
+julia> result = greetings("Mawar")
+Halo!
+Halo!
+Apa kabar Mawar
+julia> show(result)
+nothing
+```
+
+Fungsi `show` dapat menunjukkan pada kita nilai yang disimpan dalam sebuah variabel. Dalam hal ini, variabel `result` seharusnya berisi nilai kembalian dari pemanggilan fungsi `greetings`. Namun, karena fungsi `greetings` ini merupakan fungsi `void`, variabel `result` memang seharusnya tidak berisi sebuah nilai. Dalam `Julia`, `nothing` merupakan  tipe data khusus yang menyatakan bahwa sebuah variabel tidak berisi sebuah nilai (kosong).
