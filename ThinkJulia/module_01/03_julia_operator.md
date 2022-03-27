@@ -2,7 +2,7 @@
 
 **Eksperesi** merupakan kombinasi dari nilai, variabel, dan operator. Contoh ekspresi dalam `Julia`:
 
-```console
+```bash
 julia> 3.14
 3.14
 julia> jarijari
@@ -15,7 +15,7 @@ Jika menggunakan REPL, ekspresi akan dievaluasi sehingga kita dapat melihat nila
 
 **Pernyataan** dalam `Julia` merupakan unit terkecil dalam program yang memberikan sebuah efek tertentu. Contohnya seperti memberikan nilai kedalam sebuah variabel dan melakukan evaluasi fungsi.
 
-```console
+```bash
 julia> jarijari = 10
 10
 julia> println(jarijari)
@@ -34,7 +34,7 @@ Sebuah ekspresi dapat mengandung satu atau lebih operator. Urutan evaluasi opera
 
 Pada dasarnya operator dalam `Julia` digunakan untuk melakukan operasi matematika. Namun, selain operasi matematika, beberapa operator matematika dapat diterapkan pada tipe data `String`. Contoh operator yang berlaku untuk tipe data `String` dalam `Julia` adalah sebagai berikut:
 
-```console
+```bash
 julia> str_a = "Belajar"
 "Belajar"
 julia> str_b = "Julia"
@@ -45,7 +45,7 @@ julia> str_a * str_b
 
 Dapat dilihat bahwa operator perkalian `*` dalam tipe data `String` berperan untuk melakukan penyambungan antara dua buah `String`. Selain itu, operator pangkat `^` dalam tipe data `String` dapat melakukan duplikasi `String`.
 
-```console
+```bash
 julia> str_a = "Belajar"
 "Belajar"
 julia> str_a ^ 3

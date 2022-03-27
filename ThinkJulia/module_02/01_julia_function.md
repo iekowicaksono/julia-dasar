@@ -2,7 +2,7 @@
 
 Sebuah fungsi dalam pemrograman terdiri dari beberapa urutan ekspresi dan pernyataan yang menjadi satu kesatuan untuk melakukan proses komputasi tertentu. Sebagai contoh, kita sudah melihat sebelumnya bahwa dalam `Julia` terdapat fungsi `println()` yang dapat mencetak sebuah nilai ke layar. Cara pemanggilan sebuah fungsi dalam `Julia` hampir sama dengan bahasa pemrograman prosedural lainnya seperti `C++`, `Java`, `Python` yaitu dengan menyebutkan nama fungsi diikuti dengan parameter-parameter yang sesuai dan diapit oleh tanda kurung (parenthesis).
 
-```console
+```bash
 julia> println("Hello Gais!")
 Hello Gais!
 ```
@@ -11,7 +11,7 @@ Pada skrip diatas, fungsi bernama `println` diikuti dengan sebuah paramter (atau
 
 Pada umumnya, fungsi juga dapat mengembalikan sebuah nilai. Nilai ini sering disebut sebagai nilai kembalian (*return value*). Contohnya:
 
-```console
+```bash
 julia> x = parse(Int64, "8")
 8
 julia> print(x)
@@ -22,7 +22,7 @@ Int64
 
 Dari potongan program diatas, fungsi `parse` menerima dua buah parameter yaitu `Int64` dan `"8"`. Berdasarkan parameter yang diberikan, fungsi `parse` melakukan konversi dan mengembalikan sebuah bilangan bertipe `Int64` (parameter pertama) yang bernilai sesuai dengan paramter keduanya (yaitu `8`). Tidak semua jenis parameter dalam fungsi parse dapat menghasilkan nilai yang sesuai. Potongan kode berikut menghasilkan pesan kesalahan saat pemanggilan fungsi `parse`.
 
-```console
+```bash
 julia> parse(Int64, "Hello")
 ERROR: ArgumentError: invalid base 10 digit 'H' in "Hello"
 ```
@@ -31,7 +31,7 @@ Meskipun kita telah mendefinisikan jumlah parameter yang sesuai, namun fungsi `p
 
 Dalam bahasa pemrograman `Julia`, kita dapat memanfaatkan secara langsung fungsi matematika umum seperti `log`, `sin`, `sqrt`, dan lain sebagainya.
 
-```console
+```bash
 julia> log10(100)
 2.0
 julia> sin(0.5*&#960;)
