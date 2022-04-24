@@ -53,3 +53,16 @@ julia> str_a ^ 3
 ```
 
 Komentar dalam bahasa `Julia` diawali dengan simbol pagar `#`. Dalam skrip program, disarankan untuk menuliskan komentar untuk memberikan penjelasan kode yang tidak secara eksplisit jika dilihat dari kode.
+
+Beberapa operator aritmatika lain dalam julia adalah `÷` atau `\div` <kbd>TAB</kbd> (hasil bagi pembulatan kebawawah), `/` (hasil bagi pecahan) dan `%` (sisa bagi). Perhatikan contoh berikut:
+
+```bash
+julia> t_detik = 90
+70
+julia> t_menit_pecahan = t_detik / 60
+1.5
+julia> t_menit_integer = t_detik ÷ 60
+1
+julia> t_detik_sisa = t_detik % 60
+30
+```
