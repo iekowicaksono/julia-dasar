@@ -49,7 +49,7 @@ Operator `!` menghasilkan nilai kebalikan dari sebuah nilai boolean. Misalnya, u
 
 ## Percabangan
 
-Dalam menulis program kita membutuhkan kemampuan untuk melakukan kontrol terhadap alur eksekusi program yang mengakibatkan perubahan alur eksekusi (sering disebut juga sebagai percabangan) yang diinginkan. Dengan menggunakan kata kunci `if`, kita dapat melakukan perubahan alur eksekusi program.
+Dalam menulis program kita membutuhkan kemampuan untuk melakukan kontrol terhadap alur eksekusi program yang mengakibatkan perubahan alur eksekusi (sering disebut juga sebagai percabangan) yang diinginkan. Dengan menggunakan kata kunci `if-end`, kita dapat melakukan perubahan alur eksekusi program.
 
 ```julia
 if x > 0
@@ -58,3 +58,54 @@ end
 ```
 
 Program diatas akan mencetak kalimat `x bilangan positif` jika nilai `x` dalam program bernilai lebih besar dari `0`. Ketika nilai `x` bernilai `0` atau negatif, kalimat tidak akan dicetak.  
+
+Jika ekspresi `if-end` hanya mengubah alur eksekusi ketika memenuhi sebuah kondisi tertentu, kita dapat menggunakan ekspresi `if-else-end` untuk menyatakan alternatif eksekusi dari sebuah kondisi jika kondisi tersebut tidak dipenuhi.
+
+```julia
+if x > 0
+    println("x bilangan positif")
+else
+    println(x bukan bilangan positif)
+end
+```
+
+Tentu saja kita tidak hanya menggunakan sebuah kondisi dalam sebuah percabangan. Percabangan dengan lebih dari satu kondisi dapat dilakukan dengan menggunakan ekspresen `if-elseif-...-elseif-else-end`. Pengecekan kondisi dilaksanakan pada bagian yang mengandung `if` ataupun `elseif`. Perhatikan contoh berikut:
+
+```julia
+if x > 0
+    println("x bilangan positif")
+elseif x < 0
+    println("x bilangan negatif")
+else
+    println("x adalah 0")
+end
+```
+
+Kode diatas mengecek apakah x (asumsi adalah berupa bilangan) merupakan bilangan positif, negatif, ataupun bernilai tepat nol. Kata kunci `else` tidak wajib dituliskan dalam program. Contoh program berikut ini secara logika sama dengan contoh sebelumnya.
+
+```julia
+if x > 0
+    println("x bilangan positif")
+elseif x < 0
+    println("x bilangan negatif")
+elseif x == 0
+    println("x adalah 0")
+end
+```
+
+## Percabangan berasarang
+
+Jenis percabangan lainnya merupakan percabangan bersarang, dimana terdapat pernyataan percabangan kembali didalam sebuah blok `if-elseif-else`. 
+
+```julia
+if x == y
+    println("x sama dengan y")
+else
+    if x > y
+        println("x lebih besar dari y")
+    else
+        println("x lebih kecil dari y")
+    end
+end
+```
+
