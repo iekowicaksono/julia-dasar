@@ -109,3 +109,30 @@ else
 end
 ```
 
+Pada tingkatan terluar, secara logika terdapat dua jalur kondisi yaitu `x == y` dan `x != y` (tersirat pada penryataan `else`). Jalur kondisi `else` ini, kembali mengandung percabangan `if-else` yang menyatakan kondisi bilangan mana yang lebih besar diantara `x` ataupun `y`.
+
+Penggunaan operator logika dapat menyederhanakan bentuk percabangan bersarang. Sebagai contoh kita dapat menyederhanakan pernyataan percabangan berikut:
+
+```julia
+if x > 0
+    if x < 10
+        println("x bilangan positif kurang dari 10")
+    end
+end
+```
+
+Karena fungsi `println()` akan dipanggil jika memenuhi dua kondisi yang ditentukan `x > 0` dan `x < 10`, maka kita dapat menggabungkan kedua kondisi ini kedalam sebuah kondisi dengan menggunakan operator `&&` (AND).
+
+```julia
+if x > 0 && x < 10
+    println("x bilangan positif kurang dari 10")
+end
+```
+
+Julia dapat lebih menyederhanakan kembali penulisan kondisi tersebut menjadi:
+
+```julia
+if 0 < x < 10
+    println("x bilangan positif kurang dari 10")
+end
+```
